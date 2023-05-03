@@ -7,35 +7,13 @@ import sys
 import scipy
 import logging
 
-def main(image_path="", save_to_path="", numClust=3, m=2, maxIter=50, clusterMethod="Euclidean", centroid_init="None",  error=0.001, hard="True", popSize=50, maxGen=50, bboAlpha=0.25, E=1, I=1, mutationRate=0.25, mutationStrength=1, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5):
+def FCM(image_path="", save_to_path="", numClust=3, m=2, maxIter=50, clusterMethod="Euclidean", centroid_init="None",  error=0.001, hard="True", popSize=50, maxGen=50, bboAlpha=0.25, E=1, I=1, mutationRate=0.25, mutationStrength=1, initError=0.001, fAlpha=0.05, fBeta=1, fGamma=1.5):
     
     logging.basicConfig(
         level= logging.INFO,
         format= '%(asctime)s:%(levelname)s:%(name)s:%(message)s'
     )
-
-    # take arguments from command line
-    image_path = sys.argv[1]
-    save_to_path = sys.argv[2]
-    numClust = int(sys.argv[3])
-    m = float(sys.argv[4])
-    maxIter = int(sys.argv[5])
-    clusterMethod = sys.argv[6]
-    centroid_init = sys.argv[7]
-    error = float(sys.argv[8])
-    hard = sys.argv[9]
-    popSize = int(sys.argv[10])
-    maxGen = int(sys.argv[11])
-    bboAlpha = float(sys.argv[12])
-    E = float(sys.argv[13])
-    I = float(sys.argv[14])
-    mutationRate = float(sys.argv[15])
-    mutationStrength = float(sys.argv[16])
-    initError = float(sys.argv[17])
-    fAlpha = float(sys.argv[18])
-    fBeta = float(sys.argv[19])
-    fGamma = float(sys.argv[20])
-    
+ 
     #Select clustering method
     if(clusterMethod=="Euclidean"):
         FCM_Euclidean(image_path, save_to_path, numClust, m, maxIter, centroid_init, error, hard, popSize, maxGen, bboAlpha, E, I, mutationRate, mutationStrength, initError, fAlpha, fBeta, fGamma)
@@ -722,5 +700,3 @@ def FCM_Mahalanobis(image_path, save_to_path, c, m, maxIter, centroid_init, erro
     for image in images:
         image.save(save_to_path + "/group"+str(group_num)+"_FCM_M.jpeg")
         group_num += 1
-
-main()

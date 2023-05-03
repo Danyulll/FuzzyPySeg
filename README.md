@@ -19,8 +19,8 @@ FCM(image_path, save_to_path, numClust=3L, m=2, maxIter=20L, clusterMethod="Eucl
 - centroid_init - a description of the centroid initialization to be used by fcm. Defualt "none" results in centroids being randomly initialized. Other options supported are "GA", "firefly", and "BBO". "GA" uses the genetic algorithm to initialize the centroids. "firefly" uses the firefly algorithm to initialize the centroids and "BBO" uses the Biogeography-Based Optimization algorithm to initialize the centroids.
 - error - minimum difference required between fcm iterations before the algorithm converges.
 - hard - string; if 'True' hard clustering is used. If 'False' soft clustering is used. 
-- popSize - size of the population for "GA", "firefly", or "BBO" algorithm initializations. This argument must be an integer indicated by 'L' following the integer number.
-- maxGen - maximum number of iterations for "GA", "firefly", or "BBO" algortihm initializations. This argument must be an integer indicated by 'L' following the integer number.
+- popSize - size of the population for "GA", "firefly", or "BBO" algorithm initializations.
+- maxGen - maximum number of iterations for "GA", "firefly", or "BBO" algortihm initializations.
 - bboAlpha - alpha parameter of BBO algorithm.
 - E - maximum emmigration rate of BBO algorithm.
 - I - maximum immigration rate of BBO algorithm.

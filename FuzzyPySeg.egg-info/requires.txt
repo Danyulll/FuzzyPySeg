@@ -1,4 +1,0 @@
-numpy
-Image
-numba
-scipy

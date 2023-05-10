@@ -1,5 +1,6 @@
 LICENSE.txt
 README.md
+setup.cfg
 setup.py
 FuzzyPySeg/FuzzyPySeg.py
 FuzzyPySeg/__init__.py

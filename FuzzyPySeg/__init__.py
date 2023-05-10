@@ -1,1 +1,1 @@
-import FuzzyPySegCode
+from FuzzyPySeg import FCM

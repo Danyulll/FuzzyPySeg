@@ -700,3 +700,4 @@ def FCM_Mahalanobis(image_path, save_to_path, c, m, maxIter, centroid_init, erro
     for image in images:
         image.save(save_to_path + "/group"+str(group_num)+"_FCM_M.jpeg")
         group_num += 1
+

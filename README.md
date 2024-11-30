@@ -1,7 +1,13 @@
 # FuzzyPySeg
 
-FuzzyPySeg is a package for segmenting images using Fuzzy C Means clustering with either a Euclidean or Mahalanobis distance. You may also specify a centroid initialization using the firefly algorithm, genetic algorithm, or the Biogeography-based optimization algorithm. It is done throug using the FCM function:
+FuzzyPySeg is a package for segmenting images using Fuzzy C Means clustering with either a Euclidean or Mahalanobis distance. You may also specify a centroid initialization using the firefly algorithm, genetic algorithm, or the Biogeography-based optimization algorithm. For a more detailed description of the algorithms implemented see https://doi.org/10.3390/e25071021.
 
+You can install this package with the command
+```
+pip install FuzzyPySeg
+```
+
+This makes the following function available to you
 
 ```python
 
